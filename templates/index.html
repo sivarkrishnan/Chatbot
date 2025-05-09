@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My ChatBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://unpkg.com/lucide@latest"></script> 
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>My ChatBot</h1>
+        </header>
+        <main id="chat-box"></main>
+        <footer>
+            <input type="text" id="user-input" placeholder="Talk to me!">
+            <button id="send-btn"><i data-lucide="send"></i></button>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
